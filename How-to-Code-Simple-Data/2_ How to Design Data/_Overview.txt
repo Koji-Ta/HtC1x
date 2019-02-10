@@ -1,0 +1,34 @@
+cond Expressions -- 4.1
+cond expressions pt1
+cond-starter
+https://youtu.be/jkv2nd0ojhw
+Q1 -- Ex 48
+cond Expressions, pt. 2
+https://youtu.be/AZzotAqA5G8
+Q2-5 -- mag-starter
+
+Data Definitions -- 3.1
+next-color-starter
+https://youtu.be/O9sLqJscwaU
+
+Atomic Non-Distinct
+city-name-starter
+https://youtu.be/Co54bZlpubE
+Q1-4 -- course-name-starter
+
+sun
+HtDF with Non-Primative Data
+HtDF X Structure of Data Orthogonality
+Interval --4.4
+mon
+Enumeration --4.3
+Itemization --4.5
+HtDF with Intervals
+tue
+HtDF with Enumeration
+HtDF with Itemization
+Structure of Information Flows Through
+wed
+Practice Problems
+Quiz
+2-15
