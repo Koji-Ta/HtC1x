@@ -1,0 +1,32 @@
+Exercise #6
+
+EXERCISE DESCRIPTION
+Use the picture primitives to create the image of a simple automobile.
+
+
+==DOCUMENTATION LESSONS==
+Anchor point! You skimmed over this part of the book thinking you already knew it -- slow down!
+=========================
+
+==THOUGHTS==
+The concept of combining functions is starting to become more clear. Also, you did quite a bit of "fudging" when trying to get the wheels to be in the proper location.
+
+---IMAGE OPERATIONS USED HERE ---
+underlay/xy
+---
+
+<<=CODE==>> My response:
+
+(require 2htdp/image)
+
+(define car-frame
+(above (rectangle 30 10 "solid" "orange")
+       (rectangle 50 15 "solid" "orange")))
+
+(define wheels
+  (beside (circle 8 "solid" "navy")
+          (circle 8 "solid" "navy")))
+
+(underlay/xy wheels
+            -10 -20
+            car-frame)

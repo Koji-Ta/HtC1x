@@ -1,0 +1,100 @@
+; PROBLEM: consider how steep hills might be in planning bike
+; routes. Consider the following classification of steepness
+; based on the grade of a hill:
+;
+; +---------------+-------------------+
+; | Steepness     | Grade             |
+; +---------------+-------------------+
+; | Flat          | 0 to 2 percent    | 
+; | Moderate      | 3 to 6 percent    |
+; | Steep         | 7 to 10 percent   |
+; +---------------+-------------------+
+;
+; a) Use HtDD to design a data definition for steepness 
+; (call it Steepness).
+;
+; b) Use HtDD to design a data definition for hill grade 
+; (call it HillGrade). Use an itemization of intervals for
+; this data definition.
+
+
+;; Type Comment, e.g. TLColor is one of: 0, 1, 2
+;; HillGrade is one of:
+;;  - Number[0, 2]
+;;  - Number[3, 6]
+;;  - Number[7, 10]
+
+
+;; interp. steepness of a hill
+; - Number[0, 2]  is considered flat
+; - Number[3, 6]  is considered moderate
+; - Number[7, 10] is considered steep
+
+
+;; Examples
+(define S1 1)
+(define S5 5)
+(define S8 8)
+
+
+;; Template for a one argument function
+;(define (fn-for-steepness s)
+;  (cond [(<= 0 s 2) (... s)]
+;        [(and (< 3 s) (<= s 6) (... s)]
+;        [(and (< 6 s) (<= s 10) (... s)]))
+
+
+;; Template Rules Used:
+;;  one-of: 3 cases
+;;  atomic non-distinct:  Number[0, 2]
+;;  atomic non-distinct:  Number(3, 6]
+;;  atomic non-distinct:  Number[7, 10]
+
+
+;; *HtDF*: PROBLEM:
+; c) Design a function called 'steepness' that takes a hill
+; grade and produces the corresponding steepness rating
+; according to our table.
+;
+;; Signature
+;; =========
+;; (HtDP-2: express how info. will be represented as data)
+;; Steepness -> String
+
+
+;; Purpose: (HtDP-2: what does the function compute?)
+;; ==================================================
+;; consume a Steepness and produce a hill grade label.
+
+
+;; Stub; define examples; wrap each in a check-expect
+;; ==================================================
+;(define (steepness sn) "")               ;; Stub
+;; given x, expect y                     ;; from HtDP-2
+;; given a, expect b                     ;; from HtDP-2
+(check-expect (steepness S1) "flat")
+(check-expect (steepness S5) "moderate")
+(check-expect (steepness S8) "steep")
+
+
+;; Inventory -- template & constants
+;; =================================
+;(define (fn-for-steepness s)
+;  (cond [(<= 0 s 2) (... s)]
+;        [(and (< 3 s) (<= s 6) (... s)]
+;        [(and (< 6 s) (<= s 10) (... s)]))
+
+
+;; Code the body; test & debug
+;; ===========================
+(define (steepness sn)
+  (cond [(<= 0 sn 2) "flat"]
+        [(and (<= 3 sn) (<= sn 6)) "moderate"]
+        [(and (<= 6 sn) (<= sn 10)) "steep"]))
+		
+; Runs OK in DrRacket on 1/28/14.
+
+
+; If a WISH LIST is needed, it should consist of 3 things:
+; (1) a meaningful name for the function, (2) a signature,
+; and (3) a purpose statement. See section 3.4 of HtDP-2.

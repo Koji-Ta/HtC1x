@@ -1,0 +1,549 @@
+**===== 02/03 morning; start @ 0640, finish @ 0655 = 15
+
+Remember, this problem uses a mixed data itemization for OatmealTemp.
+
+I had only the coding of the body to complete this morning, and in nine (9)
+minutes, I had it working the way *I* wanted.
+
+Thinking back to the Professor's solution, I think he also wanted to teach us
+about guarding inputs (as is mentioned in my 1/31/14 notes, below).
+
+So...oatmeal is done. Now it's time to move on to HtDW. Put together a study
+plan for at least a general outline (like you did before). Signing-off now.
+
+**===== 02/02 morning; start @ 0525, finish @ 0625 = 60
+
+Lots of outdoor activity (skating) yesterday; lots of Raspberry Pi and ELTS
+setup attempt. Back to HtDP today.
+
+I have to be honest and say that I'm a bit disappointed with myself in that
+these programming concepts really don't take hold with me very easily.  For
+example, my view versus the Prof's view of approaching the oatmeal problem are
+quite different.  And still, I can't draft-up templates like this:
+
+(define (fn-for-oatmeal-temp ot)
+  (cond [(and (number? ot) (<= 0 ot) (< ot 71)) (... ot)]
+        [(string? ot) (...)]
+        [else  (... ot)]))
+        
+Right now I feel like I'm slogging-through this problem. It's a sheer act of
+will to continue forward, which I'll do. I will get through this course and I
+will learn to program as best I can. I must.
+
+Study this oatmeal problem. It has two functions. I can't really see the need,
+except for academic purposes, for the oatmeal-temp-to-adjustment function.
+
+Hmmm. Here I am getting a little down, but I run the Professor's code expecting
+one result and getting something peculiar. Here's the essence of the problem
+definition:  71 degrees is just right. Anything less is too cold and anything
+more it too hot. Yet, look what I get when I run the Prof's code with 71 as
+the input temperature:
+
+> (oatmeal-temp-to-adjustment 71)
+"turn down"
+
+The way he coded it, here's how it works when the perfect temp. is reached. But
+also remember that this assignment was given for academic reasons to, that is,
+there are times you'll have to deal with mixed data itemizations and such.
+
+> (oatmeal-temp-to-adjustment "perfect")
+"leave same"
+
+OK. The data definition for OatmealTemp is:
+
+;; OatmealTemp is one of:
+;;  - Number[0, 71)
+;;  - "just right"
+;;  - Number(71, 100]
+;; interp. possible temperatures of your oatmeal, in °C, with 71°C being the
+;; perfect temperature.
+
+So I can see using a string to get the "leave same" response. I can also see the
+value of going through the exercise. What I can't see is why I couldn't just
+work with integers for temperatures and allow the actual temperature recorded
+and handled by OatmealTemp drive the string response by Adjustment. Having that
+string in the OatmealTemp data definition appears whacky to me.
+
+OK. Went through and made the code the way I want it (~80% complete). Next
+time finish this problem, but re-read what you've done and remember the approach
+you're taking is different from the Prof's.
+
+
+**===== 01/31 evening; start @ 0610, finish @ 0635 = 25
+
+OatmealTemp is a mixed data itemization and therefore 'cond' questions written
+for it must be guarded with an appropriate type predicate, such as 'number?'.
+
+For example (from the data driven templates page):
+
+;; Measurement is one of:
+;; - Number[-10, 0)
+;; - true
+;; - Number(0, 10]
+
+(and (number? m)
+     (<= -10 m)
+     (< m 0))
+     
+ Note the call to 'number?' guards the calls to <= and <. This will protect <=
+ and < from ever recieving 'true' as an argument.
+
+**===== 01/30 evening; start @ 2200, finish @ 2230 = 30
+
+Whew! What a day! Got a Raspberry Pi up and running with ArchLinux with both
+Jeremy and Matt today -- very geeky and very cool!
+
+Worked part way through oatmeal problem. Pick it back up tomorrow. Tired.
+
+
+**===== 01/29 morning; start @ 0625, finish @ 0650 = 25
+
+First a quick scan/review of HtDP-2 exercises 30-34. I'm thinking that I'll do
+one more UBC problem (oatmeal). 
+
+Soon I'll be back to HtDW subject matter again. Section 3.6 in the text which
+explicity expects the reader to "understand the rudimentary workings of big-
+bang" as a prerequisite to focus on the problem of designing world programs.
+
+So, after "oatmeal", it's on to HtDW. Maybe I can finally conquer that blade of
+grass. :-)
+
+
+**===== 01/28 morning; start @ 0550, finish @ 0625 = 35
+
+Reminder about 'and' 'or" clauses:
+
+(and true true) = true; (and true false) = false; (or true false) = true
+(or false false) = false
+
+When writing 'and' 'or' statements, consider what makes the clause true or
+false.
+
+**ALSO**, it seems the placement of your variable in your function template was
+missplaced but this needs to be verified with Dr. Racket to be sure.  **YES**,
+it was wrong:
+
+**OLD and WRONG**
+
+(define (fn-for-steepness s)
+  (cond [(<= 0 2 s) (... s)]
+        [(and (< 3 s) (<= 6 s) (... s)]
+        [(and (< 6 s) (<= 10 s) (... s)]))
+        
+*notice the placement of the integer '2' in the first part of the 'cond', the
+placement of '6' and 's', and the placement of '10' and 's'. Also notice that
+you didn't use parenthesis to close the 'and' statements! Also notice that you
+didn't use <= for the 'and' clauses, and because of this, if the user entered
+the number '3', it was an error!
+
+
+**CORRECTED and RUNS OK**
+
+(define (steepness sn)
+  (cond [(<= 0 sn 2) "flat"]
+        [(and (<= 3 sn) (<= sn 6)) "moderate"]
+        [(and (<= 6 sn) (<= sn 10)) "steep"]))
+
+
+And again, so that it "sinks in":
+
+"We therefore always use 'cond' for situations when we wish to remind the reader
+of our code that some distinct situations come directly from *data definitions*.
+For other pieces of code, we use whatever construct is most convenient."
+
+So, back to my original point of confusion, i.e. why do this?
+
+[(<= 0 s 10) "bronze"]
+
+I think the answer is to ensure the vairiable 's' is *positive*. I believe this
+even more strongly because of what is said directly above, i.e. we use 'cond'
+to remind of distinct situations come directly from *data definitions*. In this
+particular example, the data definition is:
+
+; PositiveNumber is a Number greater or equal to 0.
+; PositiveNumber -> String
+
+So, stepping through [(<= 0 s 10) "bronze"], I think we have:
+
++ 's' is greater than or equal to 0
++ 's' is less than or equal to 10
+
+
+**===== 01/27 morning; start @ 0645, finish @ 0700 = 15
+
+Running low on time this morning but got a little further in the steepness
+problem (almost done, really). Write the function and tests later today and get
+this one completed.
+
+
+**===== 01/26 evening; start @ 2225, finish @ 2240 = 15
+
+Got a start on the steepness problem. Will finish tomorrow.
+
+
+**===== 01/25 afternoon; start @ 1445, finish @ 1500 = 15
+
+Had a thought about Peter's "Clac" project, so I cloned it today. I like that
+"Clac" is a calculator and will most likely help me with thinking mathematically
+and computationally.
+
+I *did* take a look at the steepness problem but was distracted by the sleepover
+for Mella.
+
+
+**===== 01/24 morning; start @ 0600, finish @ 0630 = 30
+
+Start with UBC and finish the data definition exercises. From there, move on to
+UBC "How to Design Worlds".
+
+A good point to remember from the UBC HtDD "Tips for Success":
+
+Remember that data definitions (or data designs) and function designs are
+different. So, for example, while both have examples, function examples are
+wrapped in check-expect and show how the function is supposed to run. Data
+examples are defined as constants using define and show how the data definition
+represents domain information. Try not to confuse the two.
+
+Completed UBC-classify-buildings.txt and ran "OK" in Dr. Racket. When you start
+again, check your solution against the Professor's.
+
+
+**===== 01/23 morning; start @ 0625, finish @ 0700 = 35
+
+A note on pragmatics: Contrast 'cond' expressions with 'if' expressions from 
+"Mixing It Up With Booleans". The latter distinguish one situation from all 
+others. As such, if expressions are much less suited for multi-situation
+contexts; they are best used when all we wish to say is “one or the other.” We
+therefore always use 'cond' for situations when we wish to remind the reader of
+our code that some distinct situations come directly from data definitions. For
+other pieces of code, we use whatever construct is most convenient.
+
+When the conditions get too complex in a 'cond' expression, you occasionally
+wish to say something like "in all other cases." For these kinds of problems,
+'cond' expressions permit the use of the 'else' keyword for the very last 'cond'
+line.
+
+I'll write this again because I think it's a key concept:
+
+"We therefore always use 'cond' for situations when we wish to remind the reader
+of our code that some distinct situations come directly from *data definitions*.
+For other pieces of code, we use whatever construct is most convenient."
+
+So, back to my original point of confusion, i.e. why do this?
+
+[(<= 0 s 10) "bronze"]
+
+I think the answer is to ensure the vairiable 's' is *positive*. I believe this
+even more strongly because of what is said directly above, i.e. we use 'cond'
+to remind of distinct situations come directly from *data definitions*. In this
+particular example, the data definition is:
+
+; PositiveNumber is a Number greater or equal to 0.
+; PositiveNumber -> String
+
+So, stepping through [(<= 0 s 10) "bronze"], I think we have:
+
++ 's' is greater than or equal to 0
++ 's' is less than or equal to 10
+
+Yes, I think I have it now; a good & worthwhile use of time to grasp a concept.
+
+
+**===== 01/22 evening; start @ 2050, finish @ 2230 = 100
+
+I got to tinkering with Mia's "Divisibility Riddles" homework assignment and
+looking for an equation that would solve it. I think it's the Chinese Remainder
+Theorem...
+
+Learned about DrRacket's 'remainder' primitive.
+
+
+**===== 01/21 morning; start @ 0200, finish @ 0250 = 50
+
+And what happened to the 20th? I fell asleep at 2030 while putting the kids to
+bed, hence the reason I'm doing this at 0200! :-)
+
+I'm still puzzled over *why* the authors chose to use three arguments for the
+first evaluation in the 'reward' function, i.e.:
+
+[(<= 0 s 10) "bronze"]
+
+Why is the zero there? I take it out and get the same answer, and by taking it
+out it certainly makes more sense to me and is easier to read/understand. The
+Racket documentation says only:
+
+procedure
+(<= x y z ...) => boolean?
+  x : real
+  y : real
+  z : real
+Compares (real) numbers for less-than or equality.
+
+Stepped through exercises 46 and 47; skipped reformulating exercise 47.
+
+Completed UBC practice problem #1, ski lodge payroll. I thought that examples
+weren't needed but the Prof. uses three with three check-expects!
+
+(define E1 11)
+(define E2 40)
+(define E3 50)
+
+(check-expect (calculate-payroll  E1) 16500)
+(check-expect (calculate-payroll  E2) 60000)
+(check-expect (calculate-payroll  E3) 75000)
+
+
+**===== 01/19 morning; start @ 0620, finish @ 0655 = 35
+
+Oh well, it seems yesterday slipped away *but* I did spend 15 minutes looking at
+my study plan and reading more carefully chapter 4 in HtDP -- I didn't neglect
+making some progress toward my 5-year plan.
+
+Reading chapter 4 in the HtDP text...
+
+"Differentiating among the different classes of inputs is the purpose of the
+cond expression."
+
+(define (reward s)
+  (cond
+    [(<= 0 s 10) "bronze"]
+    [(and (< 10 s) (<= s 20)) "silver"]
+    [else "gold"]))
+    
+The first line of the 'cond' confuses me; it seems my confusion arises from my
+misunderstanding of how to form a '<=' or '>=' statment. Because of this, I ran
+the following and received the following results in the REPL:
+
+> (<= 0 3 10)
+true
+> (>= 0 3 10)
+false
+> (< 3 10)
+true
+> (> 3 10)
+false
+> (<= 5 6 7)
+true
+> (>= 2 1 0)
+true
+
+So the form/syntax used for '<=' or '>=' requires three (3) parameters. OK, get
+that to sink-in to your thick skull.
+
+Exercise 46 says to use the stepper but to do so you must enter your function
+call -- *all* into the Definitions area of Dr. Racket -- like so:
+
+(define (reward s)
+  (cond
+    [(<= 0 s 10) "bronze"]
+    [(and (< 10 s) (<= s 20)) "silver"]
+    [else "gold"]))
+
+(reward 18)
+
+...then, step through it.
+
+
+**===== 01/17 morning; start @ 2215, finish @ 2235 = 20
+
+Start back at 5:00 minutes in the video for review. Going now to spend time with
+my wife. :-)
+
+I have something that "works". It doesn't consider boundary cases and it's
+only sketched-in, really. Let's revisit the problem statement carefully before
+looking at the Professor's answer in detail (i.e., watch the videos)...
+
+Recall the HtDD PROBLEM: design a system for controlling a New Year's Eve 
+display. Design a data definition to represent the current state of the 
+countdown, which falls into one of three categories: 
+ - not yet started
+ - from 10 to 1 seconds before midnight
+ - complete (Happy New Year!)
+
+Recall the HtDF PROBLEM: DESIGN a function called countdown->image that consumes
+a Countdown and produces an image showing the current status of the countdown.
+
+**===== 01/16 morning; start @ 0535, finish @ 0630 = 55
+
+I think I learned that the abbreviation C.f -- used by Dr. K. -- means "see
+also".
+
+Hmmm -- things are sort of working. I found myself evaluating each section of 
+the 'cond' using the REPL, which, I think, should be a good thing. I have
+some working code, but I seem to have skipped the inventory of templates and
+constants section of the HtDF recipe. Back at it later (or tomorrow).
+
+Here are things as they stand now, and it works:
+
+(define (countdown->image cd)
+  (cond [(false? cd) (text "not" 12 "red")]
+        [(and (< 0 cd) (< cd 10)) cd]
+        [(= cd 0) (text "HNY" 16 "red")]))
+
+
+**===== 01/15 morning; start @ 0558, finish @ 0633 = 35
+              evening; start @ 1930, finish @ 2000 = 30
+
+It is permissible to use 'else' for the last question for itemizations and large
+enumerations. *Normal* enumerations should not use else. Hmmm.
+
+Also, the point about "guarding" the cond question with an appropriate type
+predicate (on the data driven templates page) is more relevant to me now and 
+should be considered with this problem.
+
+I have to stop at the examples/check-expects. Dr. Racket is OK with my stub
+and examples.
+
+Evening: this letter grade problem finished-up nicely and quickly. If they could
+all go so smoothly! :-)
+
+Started on countdown, which is going to be more difficult. Looked into the
+itemization data definition type. Ran the solution file. Be mindful of the
+'text' primitive.
+
+
+**===== 01/14 morning; start @ 0615, finish @ 0645 = 30
+
+Template rules were wrong; interp. was off, template was quite different. Here's
+my "template for a one argument function" attempt:
+
+;(define aisle? sn)
+;   (cond [(aisle? sn) (... sn)]
+;         [else
+;           (...)]))
+
+And here's Dr. K's:
+
+(define (fn-for-seat-num sn)
+  (... sn))
+  
+Prof. K. tested 3 cases where I tested two; he tested both TRUE conditions.
+
+The final result was VERY different. I tried using a "cond" -- Prof. K. used an
+"or" statement.
+
+Wow -- lots of differences, and overall I feel like I really botched this one.
+I've gone back a number of times and revisited my approach versus the Prof's.
+
+  
+**===== 01/13 morning; start @ 0610, finish @ 0645 = 35
+
+From the UBC Data Driven Templates page, "in many cases the template for a
+function is determined by the type of data the function consumes."
+
+As far as the code I wrote today goes, Dr. Racket hangs when processing it. Look
+into the reason for this next time.
+
+
+**===== 01/12 morning; start @ 0720, finish @ 0750** = 30
+
+I have my work aligned so I'll get started. Worked on UBC HtDD L3 until NungPoo
+awakened at 0750. Continue later...
+
+
+**===== 01/11 morning; start @ 0625, finish @ 0720** = 55
+
+I'm seeing and feeling the differences in approach between UBC and the text
+a little more clearly now.  Dr. K. has us learning about data design and 
+representing data in the second week, making us work with intervals,
+itemizations and enumerations. The text introduces us to HtDW *then* chapter 4
+has us learn about and use intervals, itemizations and enumerations.
+
+I think the best approach will be to create a new folder in HtDP-2 for chapter 4
+and work through data definitions with the UBC and HtDP-2 exercises. I'll
+duplicate a part of these journal entries to start the notes for chapter 4.
+
+Work list for 1/11/14:
+======================
+
+ + HtDD L3 (seat-num data definition) combined with...
+  -> HtDD L6 (seat-num function).
+ + HtDD L4 (letter-grade data definition) combined with...
+  -> HtDD L7 (bump-up letter grade function).
+ + HtDD L5 (countdown data definition) combined with...
+  -> HtDD L8 (countdown-to-display function).
+  
+After these are complete, it may be beneficial to read and work through problems
+in chapter 4 of the text, i.e exercises 46-48. Note that problem 49 starts
+using worlds again in its exercises and examples.
+
+From here it looks like a good approach may be:
+
+ + go back and complete all of the UBC HtDD practice problems,
+ + start and work through UBC HtDW videos and problems,
+ + finish chapter 3 in the HtDP-2 text (HtDW), and finally,
+ + finish chapter 4 in the HtDP-2 text, up to exercise 58.
+ 
+
+**===== 01/10 evening; start @ 2050, finish @ 2135** = 45
+
+Now, HtDD in UBC.  Doing the 'best city' exercise. You forgot how to test for
+a string result, i.e.
+
+(define (best? cn)
+  (if (string=? "Denver" cn) 
+      true
+      false))
+
+
+**===== 01/09 morning; start @ 0550, finish @ 0620** = 30
+
+Jared! Pray for us little buddy! We love and miss you very much.
+
+Start with the UBC "distance between two points" exercise, then start going
+through how to design data exercises.  Here's the distance between two points
+function:
+
+(define (distance x1 y1 x2 y2)
+   (sqrt (+ (sqr (- x2 x1)) (sqr (- y2 y1))))
+
+The check-expect that uses (sqrt 2) for a result to be tested against complains
+thus: check-expect cannot compare inexact numbers. Try (check-within test
+1.4142135623730951 range).
+
+
+**===== 01/08 morning; start @ 0535, finish @ 0615** = 40
+                       start @ 1700, finish @ 1730** = 30
+
+It's the day to clear your head after all of the turbulence at work. Learning to
+program should be good for that! :-)
+
+Ah-hah! When you count a string in Scheme you mark the place that you start
+counting PRIOR TO the character, that is, for the word "brat",
+
+0b1r2a3t4
+.^.^.^.^.
+
+Expanded, for readability,
+
+0 b 1 r 2 a 3 t 4
+
+Now, considering the substring command:
+
+(substring s i j) => string
+s : string
+i : natural-number
+j : natural-number
+
+(substring "brat" 1 3) yields "ra"
+(substring "brat" 1 4) yields "rat"
+
+Don't forget to tinker in the REPL to assist when solving problems!
+
+HtDP problem #33 wants the first character removed from a string, so the word
+"brat" would become "rat". The 'string-length' function will return a number and
+I want to use this number as one of the inputs to the 'substring' command. How
+do I do this? Well, using the REPL, this returns the proper result:
+
+(substring "brat" 1 (string-length "brat"))
+
+So, replacing "brat" with a variable, the resulting function is:
+
+(define (string-last s)
+  (substring s 1 (string-length s)))
+  
+In the afternoon I completed exercise 34, string-remove-last. The function looks
+like this:
+
+(define (string-remove-last s)
+   (substring s 0 (- (string-length s) 1)))
