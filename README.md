@@ -6,5 +6,7 @@ This directory also contains exercises and solutions from a slightly older relea
 The primary objective is to reorganize the UBC folder to match the question numbers in current courses on edX "How to Code: Simple Data"; update the HTDP folder to match current exercise numbers; recommend exercises to match any missing HtC questions; and to clean up in general.
 Secondary objectives is to make a directory of the youtube videos since they are unlisted, and to make the HTDP exercise answers compliant to the UBC course specifications.
 Note that the course will be archived after April 2019. I am not sure what will happen to the paywalled material. Hopefully they will be released making my job much easier.
+I am going through the course and will update each module as I complete them.
+
 
 Author note: I am very new to github, so any advice, hints, tricks or help in general is greatly appreciated!
