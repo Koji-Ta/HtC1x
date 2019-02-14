@@ -1,4 +1,4 @@
-cond Expressions -- 4.1
+cond Expressions -- Ch4.1
 cond expressions pt1
 cond-starter
 https://youtu.be/jkv2nd0ojhw
@@ -7,7 +7,7 @@ cond Expressions, pt. 2
 https://youtu.be/AZzotAqA5G8
 Q2-5 -- mag-starter
 
-Data Definitions -- 3.1
+Data Definitions -- Ch3.1
 next-color-starter
 https://youtu.be/O9sLqJscwaU
 
@@ -16,13 +16,22 @@ city-name-starter
 https://youtu.be/Co54bZlpubE
 Q1-4 -- course-name-starter
 
-sun
 HtDF with Non-Primative Data
+best-starter
+https://youtu.be/TWPZ_9dP7iw
+Q1-4 -- icon-starter
+
 HtDF X Structure of Data Orthogonality
-Interval --4.4
-mon
-Enumeration --4.3
-Itemization --4.5
+https://youtu.be/KC9qCCuOKgo
+
+Interval -- Ch4.4
+seat-num-starter
+https://youtu.be/x3CAnozsUIQ
+Q1 -- aisle-starter
+Q2 -- middle-starter
+
+Enumeration -- Ch4.3
+Itemization -- Ch4.5
 HtDF with Intervals
 tue
 HtDF with Enumeration
