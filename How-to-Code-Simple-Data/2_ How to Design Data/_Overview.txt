@@ -31,7 +31,24 @@ Q1 -- aisle-starter
 Q2 -- middle-starter
 
 Enumeration -- Ch4.3
+letter-grade-starter
+https://youtu.be/pGS2w5rnO6Q
+Q1-2 -- seasons-year-starter
+
 Itemization -- Ch4.5
+Itemization, pt1
+countdown-starter
+https://youtu.be/irQwqqkjqCg
+Q1 -- reservation-starter (stop at example step)
+Q2 -- television-starter
+Q3 -- tlight-w-fail-starter
+Itemization, pt2
+https://youtu.be/0z0NCLcPnJ4
+Q4-6 -- complete Q1-3
+Itemization, pt3
+https://youtu.be/o1Blp95_QdU
+Q7 -- polygon-dd-starter
+
 HtDF with Intervals
 tue
 HtDF with Enumeration
