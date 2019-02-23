@@ -1,45 +1,47 @@
 Module Overview
 
 Full Speed HtDF Recipe
-double-starter
-https://youtu.be/r2gNOOOr2Do
-Q1-2 -- None
+  double-starter
+  https://youtu.be/r2gNOOOr2Do
+  Q1-2 -- None
 
 Slow Motion HtDF Recipe
-double-starter
-https://youtu.be/ucPi2l2T8vk
+  double-starter
+  https://youtu.be/ucPi2l2T8vk
 
 A Simple Practice Example
-pluralize-starter
--A First HtDF Problem -- The next 5 assignments are just step by step building of the function
-Example - yell!
-yell-starter
-https://youtu.be/41-Kw2TJ3io
-Q1-3 -- Recommend Ex34, Ex35, Ex37, Ex38
+  A First HtDF Problem
+    pluralize-starter
+  Example - yell!
+    yell-starter
+    https://youtu.be/41-Kw2TJ3io
+    Q1-3 -- Recommend Ex34, Ex35, Ex37, Ex38
 
 When Tests are Incorrect
-area-starter
-https://youtu.be/e9ajY3ryOs4
-Q1-2 -- None
+  area-starter
+  https://youtu.be/e9ajY3ryOs4
+  Q1-2 -- None
 
 Varying Recipe Order
-image-area-starter -- same as Ex36
-https://youtu.be/kJ6fc7bSgXk
+  image-area-starter -- same as Ex36
+  https://youtu.be/kJ6fc7bSgXk
 
 Poorly formed Problems
-tall-starter
-https://youtu.be/JmXqIIU1D_w
-How many tests? answer in tall-solution
-https://youtu.be/l6ha6kJqt2A
-wrap up
-https://youtu.be/hgLDpeeSets
+  Example - tall, pt 1
+    tall-starter
+    https://youtu.be/JmXqIIU1D_w
+    How many tests? answer in tall-solution
+  Example - tall, pt 2
+    https://youtu.be/l6ha6kJqt2A
+  wrap up
+    https://youtu.be/hgLDpeeSets
 
 Practice Problems
-HtDF P2 - Less Than 5
-HtDF P3 - Boxify
-HtDF P6 - Double Error
+  HtDF P2 - Less Than 5
+  HtDF P3 - Boxify
+  HtDF P6 - Double Error
 
 HtDF Quiz
-HtDF-Design-Quiz-starter
-Evaluation
-https://youtu.be/_pLVPtE8SD0
+  HtDF-Design-Quiz-starter
+  Evaluation
+    https://youtu.be/_pLVPtE8SD0
