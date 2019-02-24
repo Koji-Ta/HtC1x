@@ -1,0 +1,37 @@
+Introduction to Arbitrary Sized Data
+  https://youtu.be/R9hDy8mMjqY
+
+List Mechanisms
+  https://youtu.be/txSciy12YeI
+  Q1-6
+
+List Data Definition
+  quidditch-starter
+  https://youtu.be/e_U9kGJVTsg
+  Q1-3
+
+Function Operating on List
+  https://youtu.be/kywKUFNnnRM
+  Q1-3
+  Q4-6
+
+Revising the Recipes for Lists
+  quidditch-recap-starter
+  https://youtu.be/0hRXMGtNX0U
+  Q1-4
+
+Designing with Lists
+  designing-with-lists-1-starter
+  https://youtu.be/Y8zULo4jSAQ
+  Q1-6
+
+Position in List Templates
+  https://youtu.be/hJTgZmcxRow
+  Q1-3
+  Discussion Topic
+
+Practice Problems
+  Self-Reference P2 - Double All
+  Self-Reference P3 - Boolean List
+  Self-Reference P5 - Largest
+  Self-Reference P6 - Image List

@@ -1,0 +1,37 @@
+define-struct
+  https://youtu.be/_mbCVd6oLck
+  Q1-4
+
+Compound Data Definitions
+  compound-starter
+  https://youtu.be/FYY6szFod2I
+
+Practice Problems:
+  Compound P1 - Movie
+  Compound P3 - Student
+
+HtDW With Compound Data
+  HtDW With Compound Data pt. 1
+    cowabunga-starter
+    https://youtu.be/Go1UsJ3VC68
+    Q1-2
+  HtDW With Compound Data pt. 2
+    cowabunga-v0 and cowabunga-v1
+    https://youtu.be/tdAwkPU3XSA
+    Q3
+  HtDW With Compound Data pt. 3
+    cowabunga-v2
+    https://youtu.be/--B9H193wWI
+    Q4
+  HtDW With Compound Data pt. 4
+    cowabunga-v3
+    https://youtu.be/5Ef-h9TJS28
+  Peer Question
+
+Practice Problem
+  Compound P9 - Water Balloons
+
+Design Quiz
+  quiz-starter
+  Evaluation Tutorial Video
+    https://youtu.be/-KGL7WTvIak
