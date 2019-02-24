@@ -1,0 +1,42 @@
+Interactive Programs
+  https://youtu.be/rP-ge0fz4Dw
+
+The big-bang Mechanism
+  The big-bang Mechanism, pt 1
+    https://youtu.be/MDNzT275aX0
+    Q1
+  The big-bang Mechanism, pt 2
+    https://youtu.be/z1Dp8Nv0XEs
+    Q2
+  The big-bang Mechanism, pt 3
+    https://youtu.be/httHBGDC5Ko
+    Q3
+  The big-bang Mechanism, pt 4
+    https://youtu.be/BkihwphvhQI
+
+Domain Analysis
+  cat-starter
+  https://youtu.be/jlIk0ANePhU
+
+Program through main Function
+  cat-starter
+  https://youtu.be/dIv_Ejoo5h4
+  Q1-3
+
+Working through the Wish List
+  https://youtu.be/uG4EsrrqbDU
+  Q1-3
+
+Improving a World Program - Add SPEED
+  cat-v1
+  https://youtu.be/zn8AJ5ZxOKY
+
+Improving a World Program - Add key handler
+  cat-v2
+  https://youtu.be/O9kekKdu7So
+  Q1-2
+  Q3-5
+
+Practice Problems:
+  HtDW P1 - Countdown
+  HtDW P2 - Traffic Light

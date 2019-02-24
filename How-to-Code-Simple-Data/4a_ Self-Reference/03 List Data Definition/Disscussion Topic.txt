@@ -1,0 +1,1 @@
+The self-reference in the ListOfNatural type comment means that the type describes arbitrary-sized data. The list can have 0 elements, 1, 2 … any number. The idea that something can refer to itself may be surprising to you. Have you seen anything like self reference before? Where? (If you have programmed before, please do not use loops of any kind from other languages.)
