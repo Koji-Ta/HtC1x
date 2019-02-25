@@ -1,0 +1,39 @@
+Introduction
+  https://youtu.be/PrGH6oehrQk
+
+Function Composition, pt 1
+  Function Composition, pt 1
+    arrange-images-starter
+    https://youtu.be/njOrPD5Bejc
+    Q1
+  Function Composition, pt 2
+    https://youtu.be/R2sjypdRJ4s
+    arrange-strings-starter -- Complete before Q2
+    Q2-5
+
+Laying Out a List of Images
+  arrange-images-v2
+  https://youtu.be/Y5tdqF-a2cg
+  Q1-2
+
+Operating on a List
+  arrange-images-v3
+  https://youtu.be/KzVJPlLdkZg
+  Q1-4
+
+Domain Knowledge Shift
+  arrange-images-v4
+  https://youtu.be/Wo2ZySBKzv4
+  Q1-4
+
+The Last Helper
+  arrange-images-v5
+  https://youtu.be/-oHMiANAnmg
+  Q1
+
+Practice Problems
+  Helpers P2 - Making Rain Filtered
+
+Design Quiz
+  Naturals-and-Helpers-Design-Quiz
+  https://youtu.be/x0dhaIZZhKg

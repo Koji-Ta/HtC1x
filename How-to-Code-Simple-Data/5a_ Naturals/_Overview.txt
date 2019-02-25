@@ -1,0 +1,13 @@
+Natural Numbers
+  naturals-starter
+  https://youtu.be/E-y7dur5iHU
+  Q1-7
+
+A Parlor Trick
+  new-numerals-starter
+  https://youtu.be/W2WirO8L4ng
+
+Practice Problems
+  Naturals P2 - Decreasing Image
+  Naturals P3 - Odd from n
+

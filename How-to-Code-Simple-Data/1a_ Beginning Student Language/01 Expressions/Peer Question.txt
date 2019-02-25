@@ -1,0 +1,13 @@
+When we want to compute the average of 4, 6.2 and -12, all three of the following expressions evaluate to the correct result. Which expression do you think is the best, and why?
+
+Option 1:
+(/ (+ 4 6.2 -12) 3)
+
+Option 2:
+(/ (+ -8 6.2) 3)
+
+Option 3:
+-0.6
+
+Option 4:
+Doesn't matter, all are equally good.

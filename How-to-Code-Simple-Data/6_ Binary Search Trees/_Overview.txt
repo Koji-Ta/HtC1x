@@ -1,0 +1,33 @@
+List Abbreviations
+  https://youtu.be/mYLW95LBF64
+  Q1-5
+
+List of Account
+  lookup-in-list-starter
+  https://youtu.be/933e2bBXHSA
+  -- complete the design of the lookup function in the starter
+
+Binary Search Trees
+  https://youtu.be/nZCOdBF3W7Q
+
+A Data Definition for Binary Search Trees
+  bst-dd-starter
+  https://youtu.be/EeZlZYlD_Ng
+  Q1
+
+Lookup in BSTs
+  lookup-in-bst-starter
+  https://youtu.be/mKWd03K5XLE
+  -- Before going on, complete the design of the lookup function from the starter. Be sure to run the tests in the file to check your work.
+  Q1
+  Discussion
+
+Rendering BSTs
+  render-bst-starter
+  https://youtu.be/1XaFie6u-yU
+  Q1
+
+Practice Problems
+  BST P2 - Sum Keys
+  BST P4 - Insert
+  BST P6 - Render BST With Lines
