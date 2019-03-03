@@ -2,7 +2,7 @@ cond Expressions -- Ch4.1
   cond expressions pt1
     cond-starter
     https://youtu.be/jkv2nd0ojhw
-    Q1 -- Ex 48
+    Q1
   cond Expressions, pt. 2
     https://youtu.be/AZzotAqA5G8
     Q2-5 -- mag-starter
@@ -27,7 +27,7 @@ HtDF X Structure of Data Orthogonality
 Interval -- Ch4.4
   seat-num-starter
   https://youtu.be/x3CAnozsUIQ
-  Q1-2 -- Ex 52
+  Q1-2
 
 Enumeration -- Ch4.3
   letter-grade-starter

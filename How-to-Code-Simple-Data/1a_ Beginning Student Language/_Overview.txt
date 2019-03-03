@@ -1,8 +1,72 @@
 Expressions
+  Expressions pt1
+    pythag-starter
+    https://youtu.be/kmJElqYhK4s
+    Q1
+  Expressions pt2
+    https://youtu.be/OWT2WmI8Y9A
+    Q2-8
+    Peer Question
+
 Evaluation
+  https://youtu.be/AgeD9OWj3pM
+  Q1-6
+
 Strings and Images
+  Strings and Images, pt 1
+    https://youtu.be/AoExXD1mSOs
+    Q1-2
+  Strings and Images, pt 2
+    https://youtu.be/cSxdf_kKy3k
+    Q3-6
+
 Constant Definitions
+  Constant Definitions, pt 1
+    https://youtu.be/GZt0QeZWjVA
+    Q1-2
+  Constant Definitions, pt 2
+    https://youtu.be/etjXPk4PH4M
+
 Function Definitions
+  Function Definitions, pt. 1
+    function-definitions-starter
+    https://youtu.be/KDPbLvMHR6o
+    Q1-3
+  Function Definitions, pt. 2
+    https://youtu.be/MsKBoBIZQEU
+    Q4-8
+
 Booleans and if Expressions
+  Booleans and if Expressions, pt 1
+    https://youtu.be/18l19PwT_Hc
+    Q1-4
+  Booleans and if Expressions, pt 2
+    https://youtu.be/UDSPEyFs4xI
+    Q5
+  Booleans and if Expressions, pt 3
+    https://youtu.be/bM0r-3ZnPCU
+    Q6
+  Booleans and if Expressions, pt 4
+    https://youtu.be/wLJPlTso4oU
+    Q7-9
+
 Using the Stepper
+  stepper-starter
+  https://youtu.be/sL-zymVE6xU
+  Q1-4
+
 Discovering Primatives
+  Discovering Primitives, pt 1
+    https://youtu.be/DhbYGEVXVD8
+    Q1-2
+  Discovering Primitives, pt 2
+    https://youtu.be/sv51T3tVbb8
+
+Practice Problems
+  BSL P1 - More Arithmetic Expressions
+  BSL P3 - Tile
+  BSL P5 - Compare Images
+  BSL P6 - More Foo Evaluation
+  BSL P15 - Function Writing
+  BSL P16 - Foo Evaluation
+
